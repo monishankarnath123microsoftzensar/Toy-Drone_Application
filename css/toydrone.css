@@ -1,0 +1,203 @@
+
+body{font-family: Arial; margin-top: 1%; background-color:#ccc}
+
+#tenxtenSquare{
+  margin-top:-15px;
+  background-image: url(https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5fGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  width:600px ;
+  border: solid cornflowerblue;
+  margin-left: 25%;
+}
+#tableContainer{
+  display: inline;
+}
+#displayBlock{
+  display: inline;
+  margin-left: 25%;
+}
+#myDIV{
+  display: inline;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+#dialogBoxContainer{
+  position:absolute;
+  width: 300px;
+  height: 150px;
+  top: 150px;
+  left: 500px;
+  background: white;
+  border: 5px outset grey;
+  opacity: 0;
+  background-color: lightgrey;
+}
+#okButton{
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  background-color: forestgreen;
+}
+
+#cancelButton{
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  background-color: lightcoral;
+}
+
+#panelContainer{
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+table tr td {
+  height:50px;
+  width:45px;
+}
+.attackClass{
+  background-image: url(https://media1.giphy.com/media/26BRx71hqRexBe7Wo/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px; 
+  height: 5px;
+}
+.arrowClassUp{
+  background-image: url(http://assets.stickpng.com/thumbs/585e4752cb11b227491c3383.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px; 
+  height: 5px;
+}
+.arrowClassDown{
+  background-image: url(http://assets.stickpng.com/thumbs/585e4761cb11b227491c3384.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px; 
+  height: 5px;
+}
+.arrowClassLeft{
+  background-image: url(http://assets.stickpng.com/thumbs/585e473bcb11b227491c3381.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px; 
+  height: 5px;
+}
+.arrowClassRight{
+  background-image: url(http://assets.stickpng.com/thumbs/585e4773cb11b227491c3385.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px; 
+  height: 5px;
+}
+.button {
+    padding: 10px 25px;     
+          font-size: 20px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color:black;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 5px #606060;
+}
+
+.button:active{
+  background-color: #4F4F4F;
+          box-shadow: 0 5px #1E1E1E;
+          transform: translateY(4px);
+}
+.splButton {
+  padding: 10px 25px;     
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color:blue;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 5px #606060;
+}
+
+.splButton:active{
+background-color:slategray;
+        box-shadow: 0 5px #1E1E1E;
+        transform: translateY(4px);
+}
+
+label
+{
+    font-family: Optima;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+select {
+    width: 80px;
+    padding: 0px 0px 2px 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    height: 25px;
+    background: #eee
+}
+
+select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+#directionGroup {
+  display: none;
+  margin-left: 25%;
+}
+#toggel{
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  #directionGroup {
+    display: none;
+    margin-left: 10%;
+  }
+  .button {
+    padding: 5px 20px;     
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color:black;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 5px #606060;
+          
+}
+#dialogBoxContainer{
+  position:absolute;
+  width: 300px;
+  height: 150px;
+  top: 150px;
+  left: 150px;
+  background: white;
+  border: 5px outset grey;
+  opacity: 0;
+  background-color: lightgrey;
+}
+#tenxtenSquare{
+  margin-top:-15px;
+  background-image: url(https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5fGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  width:450px ;
+  border: solid cornflowerblue;
+  margin-left: 10%;
+}
+#displayBlock{
+  display: inline;
+  margin-left: 10%;
+}
+}

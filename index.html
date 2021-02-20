@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toy Drone</title>
+    <script src="js/toydrone.js"></script>
+    <link rel="stylesheet" href="css/toydrone.css">
+</head>
+
+<body>
+    <div>
+        <div id="tableContainer">
+            <table id="tenxtenSquare">
+            </table>
+        </div>
+        <div id="displayBlock">
+            <div id="panelContainer">
+                <button class="splButton" onclick="placeDrone();">PLACE</button>
+                <div id="myDIV">Please press PLACE button to start the game.</div>
+                <div id="toggel"><button class="splButton" onclick="Report();">REPORT</button></div>
+            </div>
+
+            <div id="directionGroup">
+                <button class="button" onclick="moveToyDrone();">MOVE</button>
+                <button class="button" onclick="changeDirection('left');">LEFT</button>
+                <button class="button" onclick="changeDirection('right');">RIGHT</button>
+                <button class="button" onclick="toyDroneAttack();">ATTACK</button>
+            </div>
+
+            <form id="dialogBoxContainer">
+                <button id="okButton" type="button" onclick="OkClickHandler()" id="okButton">OK</button>
+                <button id="cancelButton" type="button" onclick="CancelClickHandler()" id="okButton">Cancel</button>
+                <label>X :</label>
+                <select name="xValue" id="xValue">
+                    <option value=0>0</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                </select>
+                <label>Y :</label>
+                <select name="yValue" id="yValue">
+                    <option value=0>0</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                </select>
+                <br>
+                <br>
+                <label>F :</label>
+                <select name="droneManagement" id="droneManagement">
+                    <option value="NORTH">NORTH</option>
+                    <option value="EAST">EAST</option>
+                    <option value="SOUTH">SOUTH</option>
+                    <option value="WEST">WEST</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
